@@ -103,7 +103,8 @@ export function CompilerDemo() {
             <Layers3 size={24} />
           </div>
           <div>
-            <h1>Nexus Builder</h1>
+            <h1>Nexus AI Compiler</h1>
+            <p className="subtitle">AI Compiler for Software Generation</p>
             <p>Deterministic architecture engine for rapid prototyping.</p>
           </div>
         </div>
@@ -201,8 +202,9 @@ export function CompilerDemo() {
           <div className="stage-list">
             {(run?.stages ?? defaultStages()).map((stage, index) => {
               const Icon = stageIcons[index] ?? Sparkles;
+              const isActive = stage.status !== "idle";
               return (
-                <div className="stage-item" key={`${stage.name}-${index}`}>
+                <div className={`stage-item ${isActive ? "active" : ""}`} key={`${stage.name}-${index}`}>
                   <Icon size={18} />
                   <div>
                     <strong>{stage.name}</strong>
