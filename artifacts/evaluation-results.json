@@ -1,0 +1,264 @@
+{
+  "generatedAt": "2026-04-29T14:51:37.607Z",
+  "summary": {
+    "total": 20,
+    "successRate": 1,
+    "averageLatencyMs": 4,
+    "averageRepairs": 3.3,
+    "clarificationNeeded": 3,
+    "providerModes": {
+      "fallback": 20
+    },
+    "failureTypes": {
+      "CONFLICTING_REQUIREMENT": 3
+    }
+  },
+  "results": [
+    {
+      "id": "product_crm",
+      "prompt": "Build a CRM with login, contacts, deals, dashboard, role-based access, premium plan with payments, and admin analytics.",
+      "category": "product",
+      "success": true,
+      "latencyMs": 22,
+      "repairCount": 6,
+      "validationIssueCount": 0,
+      "failureTypes": [],
+      "providerMode": "fallback",
+      "clarificationNeeded": false
+    },
+    {
+      "id": "product_marketplace",
+      "prompt": "Create a marketplace for sellers and buyers with product listings, orders, checkout payments, customer accounts, and admin reporting.",
+      "category": "product",
+      "success": true,
+      "latencyMs": 9,
+      "repairCount": 4,
+      "validationIssueCount": 0,
+      "failureTypes": [],
+      "providerMode": "fallback",
+      "clarificationNeeded": false
+    },
+    {
+      "id": "product_booking",
+      "prompt": "Build a booking app for appointments with staff availability, customers, calendar dashboard, email notifications, and manager access.",
+      "category": "product",
+      "success": true,
+      "latencyMs": 9,
+      "repairCount": 1,
+      "validationIssueCount": 0,
+      "failureTypes": [],
+      "providerMode": "fallback",
+      "clarificationNeeded": false
+    },
+    {
+      "id": "product_lms",
+      "prompt": "Generate an LMS with courses, lessons, students, enrollments, instructor dashboards, progress analytics, and paid premium courses.",
+      "category": "product",
+      "success": true,
+      "latencyMs": 4,
+      "repairCount": 7,
+      "validationIssueCount": 0,
+      "failureTypes": [],
+      "providerMode": "fallback",
+      "clarificationNeeded": false
+    },
+    {
+      "id": "product_project",
+      "prompt": "Build a project management tool with projects, tasks, comments, members, kanban dashboard, roles, and analytics for admins.",
+      "category": "product",
+      "success": true,
+      "latencyMs": 3,
+      "repairCount": 3,
+      "validationIssueCount": 0,
+      "failureTypes": [],
+      "providerMode": "fallback",
+      "clarificationNeeded": false
+    },
+    {
+      "id": "product_support",
+      "prompt": "Create a support ticket system with customers, tickets, agents, SLA dashboard, admin analytics, and searchable ticket history.",
+      "category": "product",
+      "success": true,
+      "latencyMs": 5,
+      "repairCount": 3,
+      "validationIssueCount": 0,
+      "failureTypes": [],
+      "providerMode": "fallback",
+      "clarificationNeeded": false
+    },
+    {
+      "id": "product_inventory",
+      "prompt": "Build inventory software with products, suppliers, purchase orders, stock movements, low stock dashboard, and manager approvals.",
+      "category": "product",
+      "success": true,
+      "latencyMs": 2,
+      "repairCount": 1,
+      "validationIssueCount": 0,
+      "failureTypes": [],
+      "providerMode": "fallback",
+      "clarificationNeeded": false
+    },
+    {
+      "id": "product_finance",
+      "prompt": "Create a finance tracker with accounts, transactions, budgets, dashboards, subscription plan, payments, and user roles.",
+      "category": "product",
+      "success": true,
+      "latencyMs": 2,
+      "repairCount": 4,
+      "validationIssueCount": 0,
+      "failureTypes": [],
+      "providerMode": "fallback",
+      "clarificationNeeded": false
+    },
+    {
+      "id": "product_events",
+      "prompt": "Build an event management app with events, tickets, attendees, checkout payments, organizer dashboard, and admin reporting.",
+      "category": "product",
+      "success": true,
+      "latencyMs": 3,
+      "repairCount": 4,
+      "validationIssueCount": 0,
+      "failureTypes": [],
+      "providerMode": "fallback",
+      "clarificationNeeded": false
+    },
+    {
+      "id": "product_hr",
+      "prompt": "Generate an HR portal with employees, leave requests, approvals, manager dashboard, role permissions, and audit analytics.",
+      "category": "product",
+      "success": true,
+      "latencyMs": 2,
+      "repairCount": 3,
+      "validationIssueCount": 0,
+      "failureTypes": [],
+      "providerMode": "fallback",
+      "clarificationNeeded": false
+    },
+    {
+      "id": "edge_vague",
+      "prompt": "Build something useful.",
+      "category": "edge",
+      "success": true,
+      "latencyMs": 1,
+      "repairCount": 1,
+      "validationIssueCount": 0,
+      "failureTypes": [],
+      "providerMode": "fallback",
+      "clarificationNeeded": false
+    },
+    {
+      "id": "edge_conflict_auth",
+      "prompt": "Build a dashboard with login and role access, but no login and no auth should exist.",
+      "category": "edge",
+      "success": true,
+      "latencyMs": 1,
+      "repairCount": 1,
+      "validationIssueCount": 1,
+      "failureTypes": [
+        "CONFLICTING_REQUIREMENT"
+      ],
+      "providerMode": "fallback",
+      "clarificationNeeded": true
+    },
+    {
+      "id": "edge_conflict_premium",
+      "prompt": "Create a free only CRM with no paid features, premium subscriptions, and payment checkout.",
+      "category": "edge",
+      "success": true,
+      "latencyMs": 2,
+      "repairCount": 4,
+      "validationIssueCount": 1,
+      "failureTypes": [
+        "CONFLICTING_REQUIREMENT"
+      ],
+      "providerMode": "fallback",
+      "clarificationNeeded": true
+    },
+    {
+      "id": "edge_admin_conflict",
+      "prompt": "Build analytics where admins can see analytics and admins cannot see analytics.",
+      "category": "edge",
+      "success": true,
+      "latencyMs": 2,
+      "repairCount": 3,
+      "validationIssueCount": 1,
+      "failureTypes": [
+        "CONFLICTING_REQUIREMENT"
+      ],
+      "providerMode": "fallback",
+      "clarificationNeeded": true
+    },
+    {
+      "id": "edge_missing_roles",
+      "prompt": "Build a contacts app where regional reviewers approve records, with no other role details.",
+      "category": "edge",
+      "success": true,
+      "latencyMs": 2,
+      "repairCount": 1,
+      "validationIssueCount": 0,
+      "failureTypes": [],
+      "providerMode": "fallback",
+      "clarificationNeeded": false
+    },
+    {
+      "id": "edge_many_features",
+      "prompt": "Build CRM, marketplace, booking, payments, analytics, messaging, imports, exports, dashboards, admin tools, and premium plans.",
+      "category": "edge",
+      "success": true,
+      "latencyMs": 3,
+      "repairCount": 6,
+      "validationIssueCount": 0,
+      "failureTypes": [],
+      "providerMode": "fallback",
+      "clarificationNeeded": false
+    },
+    {
+      "id": "edge_midway_revision",
+      "prompt": "Modify the current project app so admins get analytics and premium users can export data.",
+      "category": "edge",
+      "success": true,
+      "latencyMs": 3,
+      "repairCount": 7,
+      "validationIssueCount": 0,
+      "failureTypes": [],
+      "providerMode": "fallback",
+      "clarificationNeeded": false
+    },
+    {
+      "id": "edge_under_specified_data",
+      "prompt": "Make a dashboard for my team with charts and reports.",
+      "category": "edge",
+      "success": true,
+      "latencyMs": 2,
+      "repairCount": 3,
+      "validationIssueCount": 0,
+      "failureTypes": [],
+      "providerMode": "fallback",
+      "clarificationNeeded": false
+    },
+    {
+      "id": "edge_hallucination_guard",
+      "prompt": "Create a system with contacts but make sure UI forms do not invent fields that APIs and tables cannot store.",
+      "category": "edge",
+      "success": true,
+      "latencyMs": 2,
+      "repairCount": 1,
+      "validationIssueCount": 0,
+      "failureTypes": [],
+      "providerMode": "fallback",
+      "clarificationNeeded": false
+    },
+    {
+      "id": "edge_access_pressure",
+      "prompt": "Build a customer app where guests browse records, users edit owned records, managers approve records, and admins manage analytics.",
+      "category": "edge",
+      "success": true,
+      "latencyMs": 1,
+      "repairCount": 3,
+      "validationIssueCount": 0,
+      "failureTypes": [],
+      "providerMode": "fallback",
+      "clarificationNeeded": false
+    }
+  ]
+}

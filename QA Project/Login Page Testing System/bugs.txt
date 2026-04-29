@@ -1,0 +1,46 @@
+Project Name: Login Page Testing System
+Module: Login Page
+Bug Report Type: Sample Bug Reports
+
+Bug ID: BUG_LOGIN_001
+Bug Title: Error message is not displayed for invalid password
+Severity: Medium
+Priority: High
+Steps to Reproduce:
+1. Open the login page
+2. Enter username: student
+3. Enter password: wrongPassword
+4. Click the Submit button
+Expected Result: User should see an error message such as "Your password is invalid!"
+Actual Result: No error message is displayed and user stays on the same page
+Status: Open
+
+------------------------------------------------------------
+
+Bug ID: BUG_LOGIN_002
+Bug Title: User can submit login form with empty username
+Severity: High
+Priority: High
+Steps to Reproduce:
+1. Open the login page
+2. Leave the username field empty
+3. Enter password: Password123
+4. Click the Submit button
+Expected Result: Login should fail and username validation message should be displayed
+Actual Result: Form is submitted without showing username validation
+Status: Open
+
+------------------------------------------------------------
+
+Bug ID: BUG_LOGIN_003
+Bug Title: Password field accepts blank spaces as password
+Severity: Medium
+Priority: Medium
+Steps to Reproduce:
+1. Open the login page
+2. Enter username: student
+3. Enter only blank spaces in the password field
+4. Click the Submit button
+Expected Result: Login should fail and password validation message should be displayed
+Actual Result: System accepts blank spaces and does not show a proper validation message
+Status: Open

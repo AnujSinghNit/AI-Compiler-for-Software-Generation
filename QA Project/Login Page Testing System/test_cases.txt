@@ -1,0 +1,85 @@
+Project Name: Login Page Testing System
+Module: Login Page
+Test Type: Manual Testing
+
+Test Case ID: TC_LOGIN_001
+Test Scenario: Verify login with valid username and valid password
+Precondition: User is on the login page
+Test Steps:
+1. Open the login page
+2. Enter username: student
+3. Enter password: Password123
+4. Click the Submit button
+Expected Result: User should be logged in successfully and success page/message should be displayed
+Actual Result: Not Executed
+Status: Not Executed
+
+------------------------------------------------------------
+
+Test Case ID: TC_LOGIN_002
+Test Scenario: Verify login with valid username and invalid password
+Precondition: User is on the login page
+Test Steps:
+1. Open the login page
+2. Enter username: student
+3. Enter password: wrongPassword
+4. Click the Submit button
+Expected Result: User should not be logged in and password error message should be displayed
+Actual Result: Not Executed
+Status: Not Executed
+
+------------------------------------------------------------
+
+Test Case ID: TC_LOGIN_003
+Test Scenario: Verify login with invalid username and valid password
+Precondition: User is on the login page
+Test Steps:
+1. Open the login page
+2. Enter username: wrongUser
+3. Enter password: Password123
+4. Click the Submit button
+Expected Result: User should not be logged in and username error message should be displayed
+Actual Result: Not Executed
+Status: Not Executed
+
+------------------------------------------------------------
+
+Test Case ID: TC_LOGIN_004
+Test Scenario: Verify login with empty username
+Precondition: User is on the login page
+Test Steps:
+1. Open the login page
+2. Leave username field empty
+3. Enter password: Password123
+4. Click the Submit button
+Expected Result: User should not be logged in and validation/error message should be displayed
+Actual Result: Not Executed
+Status: Not Executed
+
+------------------------------------------------------------
+
+Test Case ID: TC_LOGIN_005
+Test Scenario: Verify login with empty password
+Precondition: User is on the login page
+Test Steps:
+1. Open the login page
+2. Enter username: student
+3. Leave password field empty
+4. Click the Submit button
+Expected Result: User should not be logged in and validation/error message should be displayed
+Actual Result: Not Executed
+Status: Not Executed
+
+------------------------------------------------------------
+
+Test Case ID: TC_LOGIN_006
+Test Scenario: Verify login with both username and password fields empty
+Precondition: User is on the login page
+Test Steps:
+1. Open the login page
+2. Leave username field empty
+3. Leave password field empty
+4. Click the Submit button
+Expected Result: User should not be logged in and validation/error message should be displayed
+Actual Result: Not Executed
+Status: Not Executed

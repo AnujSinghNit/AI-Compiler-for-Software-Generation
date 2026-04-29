@@ -1,0 +1,30 @@
+{
+	"folders": [
+		{
+			"name": "Nexus Builder (Project)",
+			"path": "."
+		},
+		{
+			"name": "Source Code",
+			"path": "src"
+		},
+		{
+			"name": "Tests",
+			"path": "tests"
+		},
+		{
+			"name": "Logs",
+			"path": "logs"
+		},
+		{
+			"name": "Validation",
+			"path": "verify"
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/.next": true,
+			"**/node_modules": true
+		}
+	}
+}

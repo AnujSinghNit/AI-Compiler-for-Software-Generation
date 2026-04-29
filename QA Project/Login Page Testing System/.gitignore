@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.venv/
+.selenium_cache/
+screenshots/*.png
+!screenshots/.gitkeep
