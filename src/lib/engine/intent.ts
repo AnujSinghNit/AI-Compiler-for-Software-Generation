@@ -1,4 +1,4 @@
-import type { GenerateRequest, UserIntent } from "./types";
+import type { BuildRequest, UserIntent } from "./types";
 import { pluralize, slugify, unique } from "./utils";
 
 /**
@@ -40,7 +40,7 @@ const DOMAIN_DATA = [
 /**
  * Extracts intent and basic entities from a natural language prompt.
  */
-export function extractIntent(request: GenerateRequest): UserIntent {
+export function extractIntent(request: BuildRequest): UserIntent {
   const rawPrompt = `${request.prompt} ${request.changeRequest ?? ""}`.trim();
   const prompt = rawPrompt.replace(/\s+/g, " ");
   const lower = prompt.toLowerCase();

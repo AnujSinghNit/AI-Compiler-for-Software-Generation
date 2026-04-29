@@ -105,7 +105,7 @@ export async function startBuild(request: BuildRequest): Promise<BuildResult> {
       repairable: false
     }));
     validation.issues.push(...conflictIssues);
-    spec.executionReport.status = "clarification_required";
+    spec.executionReport.status = "clarification_needed";
   }
 
   stages.push({

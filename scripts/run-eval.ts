@@ -1,6 +1,6 @@
-import { runEvaluation } from "@/lib/eval/runEvaluation";
+import { startBenchmarks } from "@/lib/benchmarks/orchestrator";
 
-const report = await runEvaluation({ mode: "gemini", writeArtifacts: true });
+const report = await startBenchmarks({ mode: "gemini", writeArtifacts: true });
 
 console.log(`Evaluation complete: ${Math.round(report.summary.successRate * 100)}% success`);
 console.log("OpenAI is optional. The core evaluation is reliability, validation, repair, and runtime execution.");

@@ -13,7 +13,7 @@ export async function startBenchmarks(options: { mode: BuildMode; writeArtifacts
 
   for (const item of evaluationPrompts) {
     const build = await startBuild({ prompt: item.prompt, mode: options.mode });
-    const clarificationNeeded = build.spec.executionReport.status === "clarification_required";
+    const clarificationNeeded = build.spec.executionReport.status === "clarification_needed";
     
     results.push({
       id: item.id,
